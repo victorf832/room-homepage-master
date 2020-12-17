@@ -7,19 +7,28 @@
   <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Room homepage</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
-  <!-- <script src="./main.js"></script> -->
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!-- <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
+  <script src="./mains.js"></script>
 </head>
 
 <body>
   <header class="cabecera">
-    <h1>Room</h1>
+    <div class="menus">
+      <div class="menu-hamburguesa">
+        <img class="abrir" src="./images/icon-hamburger.svg" alt="abrir menu">
+       
+        <ul class="menu-desple">
+          <li> <img class="cerrar" src="./images/icon-close.svg" alt="cerrar menu"></li>
+          <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <h1>Room</h1>
+    </div>
     <nav>
       <ul class="menu">
         <li><a href="#">Home</a></li>
@@ -33,9 +42,13 @@
     <section class="contenedor">
       <div class="carousel">
         <div id="imagen" class="images">
-          <img class="img1" src="./images/desktop-image-hero-1.jpg">
-          <img class="img2" src="./images/desktop-image-hero-2.jpg">
-          <img class="img3" src="./images/desktop-image-hero-3.jpg">
+          <img class="img1 " src="./images/desktop-image-hero-1.jpg">
+          <img class="img2 " src="./images/desktop-image-hero-2.jpg">
+          <img class="img3 " src="./images/desktop-image-hero-3.jpg">
+        </div>
+        <div class="controles">
+          <button id="retroceder"><img src="./images/icon-angle-left.svg" alt=""></button>
+          <button id="avanzar"><img src="./images/icon-angle-right.svg" alt=""></button>
         </div>
       </div>
       <div class="texto">
@@ -60,25 +73,22 @@
             experience in this industry, we understand what customers want for their home and office.</p>
           <a href="#">Shop now</a>
         </article>
-        <div class="controles">
-          <button id="avanzar">Avanzar</button>
-          <button id="retroceder">Retroceder</button>
-        </div>
+        
       </div>
     </section>
     <section class="contenedortwo">
-      <div>
-        aaaaaaaaaaaa
+      <div class="imagen">
+        <img src="./images/image-about-dark.jpg" alt="es una imagen">
       </div>
-      <article class="article">
+      <article class="articles">
         <h3> About our furniture</h3>
         <p>Our multifunctional collection blends design and function to suit your individual taste.
           Make each room unique, or pick a cohesive theme that best express your interests and what
           inspires you. Find the furniture pieces you need, from traditional to contemporary styles
           or anything in between. Product specialists are available to help you create your dream space.</p>
-      </article>
-      <div>
-        aaaaaaaaaaaa
+        </article>
+        <div class="imagen">
+          <img src="./images/image-about-light.jpg" alt="es una imagen">
       </div>
     </section>
   </main>
@@ -86,7 +96,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-  <script src="./mains.js"></script>
 </body>
 
 </html>
